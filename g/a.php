@@ -10,16 +10,16 @@
 
 <table border="1">
 <tr>
-    <th>Oder ID</th>
-    <th>สินค้า</th> 
-    <th>ประเภทสินค้า</th>
-    <th>วันที่</th>
-    <th>ประเทศ</th>
-    <th>จำนวนเงิน</th> 
-    <th>รูป</th>    
+    <th>Oder ID</th>
+    <th>สินค้า</th> 
+    <th>ประเภทสินค้า</th>
+    <th>วันที่</th>
+    <th>ประเทศ</th>
+    <th>จำนวนเงิน</th> 
+    <th>รูป</th>    
 </tr>
 <?php
-    include_once("connectdb.php");
+    include_once("connectdb.php");
 	//$sql = "SELECT * FROM `popsupermarket` WHERE p_country = 'Sweden' AND p_category = 'Vegetables' ORDER BY p_product_name ASC ";//
 	$sql = "SELECT * FROM `popsupermarket`";
 	$rs = mysqli_query($conn, $sql);
@@ -28,25 +28,25 @@
 		$total += $data['p_amount'];
 ?>
 <tr>
-    <td><?php echo $data['p_order_id'];?></td>
-    <td><?php echo $data['p_product_name'];?></td>
-    <td><?php echo $data['p_category'];?></td>
-    <td><?php echo $data['p_date'];?></td>
-    <td><?php echo $data['p_country'];?></td>
-    <td align="right"><?php echo number_format($data['p_amount'],0);?></td>
-     <td><img src="<?php echo $data['p_product_name'];?>.jpg" width="60"</td>
-  
+    <td><?php echo $data['p_order_id'];?></td>
+    <td><?php echo $data['p_product_name'];?></td>
+    <td><?php echo $data['p_category'];?></td>
+    <td><?php echo $data['p_date'];?></td>
+    <td><?php echo $data['p_country'];?></td>
+    <td align="right"><?php echo number_format($data['p_amount'],0);?></td>
+     <td><img src="<?php echo $data['p_product_name'];?>.jpg" width="60"</td>
+  
 </tr>
 <?php } ?>
 
 <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td align="right"><?php echo number_format($total,0);?></td>
-    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right"><?php echo number_format($total,0);?></td>
+    <td>&nbsp;</td>
 </tr>
 
 </table>
