@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$pwd  = "";
+$pwd  = "Natcha12345";
 $db   = "4061db";
 
 $conn = mysqli_connect($host,$user,$pwd,$db);
@@ -11,4 +11,5 @@ if(!$conn){
 }
 
 mysqli_set_charset($conn,"utf8");
+
 ?>
