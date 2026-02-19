@@ -51,7 +51,7 @@ while($data = mysqli_fetch_array($rs)){
     <td><?php echo $data['r_name']; ?></td>
     <td width="50" align="center">
         <a href="delete.php?id=<?php echo $data['r_id'];?>" onClick="return confirm('ยืนยันการลบ');">
-            <img src="img/4.jpg" width="20" alt="ลบ">
+            <img src="img/4.jpg" width="30" alt="ลบ">
         </a>
     </td>
 </tr>
@@ -61,6 +61,7 @@ while($data = mysqli_fetch_array($rs)){
 
 </body>
 </html>
+
 
 
 
