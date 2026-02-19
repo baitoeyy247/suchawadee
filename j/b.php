@@ -24,7 +24,7 @@
             <?php } ?> 
         </select><br><br>
 
-        เลือกรูปภาพ: <input type="file" name="pimage" accept="image/*" required><br><br>
+        เลือกรูปภาพ: <input type="file" name="pimage" accept="img/*" required><br><br>
     
         <button type="submit" name="Submit"> บันทึก </button>
     </form>
@@ -81,4 +81,5 @@
 </table>
 
 </body>
+
 </html>
